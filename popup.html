@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet" />
+</head>
+<style>
+</style>
+
+<body class="text-center" style="width: 320px; height: 320px;">
+    <h1 class="my-4">Tinder Farmer</h1>
+    <div class="container">
+        <div class="my-2" id="options">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="like-button" id="like" checked />
+                <label class="form-check-label" for="like">Thích</label>
+            </div>
+
+            <!-- Default checked radio -->
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="like-button" id="unlike" />
+                <label class="form-check-label" for="unlike">Lướt qua</label>
+            </div>
+        </div>
+        <label for="speedTime" class="my-2">Limit time (s):</label>
+        <div class="range">
+            <input type="range" min="0.1" max="5.0" value="0.5" step="0.01" class="form-range" id="speed" />
+        </div>
+        <button type="button" id="start" class="btn btn-success my-2">Bắt đầu swipe</button>
+        <button type="button" id="stop" class="btn btn-danger my-2">Dừng swipe</button>
+        <br>
+        <div id="spinner" class="spinner-border text-primary my-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <div id="none-tab">
+        Please redirect to Tinder
+    </div>
+</body>
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
+<script src="./popup.js"></script>
+
+</html>
